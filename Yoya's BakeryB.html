@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Detalle de Peido Yoya's bakery</title>
+</head>
+<body>
+    <img src="C:\Users\702233\Downloads\Yoya's Bakery.png" alt ="Logo Pasteleria" width="250px">
+
+	<body style="background-color:beige;">
+ 	
+    <h1>Rellene los datos necesarios Para Tomar el Pedido</h1>
+	
+	<P>Nombre del Cliente: Diego Alan Delgado
+	<BR>Pastel de 3 leches
+	<BR>Con Conejitos Turin
+	<BR>Para 6 personas
+	<BR>Agregar Gorritos de fiesta
+	<BR>Fecha de Entrega: 03 de Mayo 2022
+	<BR><BR>
+
+    <!-- Labels / Etiquetas -->
+    <label for="Input1">  Nombre del Pastelero</label>
+    <br>
+    <!-- Entradas / Inputs -->
+    <input type="text" id="Input1" name="Input1">
+    <br><br>
+
+    <hr>
+    <!-- Tipos de Inputs -->
+    <h2>Datos de Empleado</h2>
+    <label for="correo1">Correo</label><br>
+    <input type="email" id="correo1" name="correo1"><br>
+    
+    
+    <label for="psw1">Numero de Empleado</label><br>
+    <input type="text" id="psw1" name="psw1"><br>
+    
+    <label for="tel1">Teléfono</label><br>
+    <input type="tel" id="tel1" name="tel1" maxlength="10"><br>
+    
+
+
+    <hr>
+
+	<h2>Prioridad</h2><br>
+    <input type="radio" id="roja" name="salsas" value="Roja">
+    <label for="roja">Baja</label><br>
+    <input type="radio" id="verde" name="salsas" value="Verde">
+    <label for="verde">Media</label><br>
+    <input type="radio" id="guacamole" name="salsas" value="Guacamole">
+    <label for="guacamole">Alta</label><br>
+	
+    <h2>Tipo de Horno a USar</h2><br>
+    <input type="checkbox" id="topping1" name="topping1" value="Cebolla">
+    <label for="topping1">Electrico</label><br>
+    <input type="checkbox" id="topping2" name="topping2" value="Cilantro">
+    <label for="topping2">Gas</label><br>
+    <input type="checkbox" id="topping3" name="topping3" value="Salsa">
+    <label for="topping3">Otro</label><br>
+	
+	<label for="numero1">Numero de ayudantes necesarios</label><br>
+    <input type="number" id="numero1" name="numero1"><br>
+    
+   
+    <h2>Calidad de Pastel:</h2>
+    <label for="tacos">Tipo de reposteria:</label>
+    <select id="tacos" name="tacos">
+        <option value="suadero">Tradicional</option>
+        <option value="pastor">Alta Reposteria</option>
+        <option value="campechanos">Otra</option>
+    </select>
+    
+    <h2>Seleccione Hrs. de Elaboracion</h2>
+    <label for="refresco">Numero de Hrs</label><br>
+    <input list="refresco">
+    <datalist id="refresco">
+        <option value="1 hr">
+        <option value="2 hrs">
+        <option value="3 hrs">
+        <option value="4 hrs">
+        <option value="5 hrs o mas">
+    </datalist>
+    <br><br>
+
+    <hr>
+    
+    <h2>Confirmar Fecha De entrega</h2><br>
+    <input type="date" id="fecha1" name="fecha1"><br>
+
+ 
+ <form action="/accion.js" id="form1" method="post">
+    <!     <label for="nombre">Notificar A Cliente:</label>
+   <!      <input type="text" id="nombre" name="nombre"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+   
+ 
+    
+</body>
+</html>
